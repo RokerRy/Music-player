@@ -39,7 +39,8 @@ section{
      top: 2%;
      right: 3%;
  }
- #menu-list{
+ #menu-list,
+ #btn{
      list-style-type: none;
     height:100%;
     display:flex;
@@ -62,6 +63,7 @@ section{
      font-size: medium;
      font-family: Georgia, 'Times New Roman', Times, serif;
  }
+ 
  #menu-list li:active{
     
     border-top: 1px solid rgba(255, 255, 255, 0.932);

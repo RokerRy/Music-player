@@ -38,18 +38,47 @@
 
     <body>
 
-        <!-------------------------------------- Navbar Section -------------------------------------->
+        <!--------------------------------------------------Navbar Section------------------------------------------------------>
         <section id="head"></section>
         <div id="logo">
             <div class="logotext">Music Player</div>
         </div>
         <div id="menu">
             <ul id="menu-list">
-                <li><a href="#login">Login</a></li>
                 <li><a href="#signup">Sign up</a></li>
+        <!--------------------------------------------------on click login button----------------------------------------------->
+        <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalform">Login</button></li>
             </ul>
         </div>
 
+        <!---------------------------------------------------Modal form--------------------------------------------------------->
+        <div class="modal fade" id="modalform" tabindex="-1" area-hidden="true">
+        <div class="modal-dialog modal-dialog-centred">
+        <div class="modal-content">
+
+        <!----------------------------------------------------Login Form------------------------------------------------------->
+        <div id ="login">
+            <form action="">
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label"><b>Email Id</b></label><br>
+                <input type="email" class="form-control" id="email" placeholder="abc@gmail.com" class="form" required>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="password" class="form-label"><b>Password (8 characters minimum)</b></label><br>
+                    <input type="password" class="form-control" id="password" placeholder="********" class="form" minlength="8" required>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="remember" name="remember" >
+                    <label for="remember"><b>Remember Me</b></label>
+                </div>
+                <div>
+                    <input type="submit" value="Log In">
+                </div><br>
+            </div>
+            </form>
+            </div>
+        </div>
+    </div>
 
 
 
