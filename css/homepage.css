@@ -8,6 +8,7 @@ section{
     display: inline;
     flex-direction: column;
 }
+/*----------------------------------------------------------- Navbar----------------------------------------------------------- */
 #head {
     position:relative;
     width: 100vw;

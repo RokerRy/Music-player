@@ -25,97 +25,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" 
             integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
-        
-    <style>
-body{
-    margin: 0%;
-    padding: 0%;
-}
-section{
-    align-items: center;
-    display: inline;
-    flex-direction: column;
-}
-#head {
-    position:relative;
-    width: 100vw;
-    height: 100vh;
-    opacity: 3%;
-    background-size: cover;
-}
-#logo{
-    position:absolute;
-    top:2%;
-    left:3%;
-    display: inline;
-        }
-.logotext{
-    display: inline;
-    font-size: 2rem;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: wheat
- }
- #login
-{
-   border-style: solid;
-   border-width: 3px;
-   position: fixed;
-   left: 40%;
-   top: 10%;
-   padding:4px ;
-}
-input [type=submit]{
-    background-color: black;
-    color: aliceblue;
-    border: 2px solid aliceblue;
-    padding: 8px 16px;
-    margin: 4px 2px;
-    float: right;
-}
-input [type=submit]:hover{
-    background-color: aquamarine;
-}
-label{
-    padding: 3px 3px 3px 0px;
-    display: inline-block;
-}
-hr.divide{
-    position: relative;
-    top: 57%;
-}
-#link{
-    color: whitesmoke;
-    left: 40%;
-    top: 60%;
-    position: fixed;
-    padding: 2%;
-}
-a:link, a:visited{
-    padding: 6px 16px;
-    text-align: center;
-    text-decoration: double;
-    
-}
-#facebook{
-    background-color: #4174f2;
-    color: white;
-    display: block;
-    width: 300px;
-}
-#google{
-    background-color: #dce3de;
-    color: black;
-    display: block;
-    width: 300px;
-}
-#apple{
-    background-color: black;
-    color: white;
-    display: block;
-    width: 300px;
-}
-    </style>
+                <!-------------------------------------- Stylesheets ---------------------------------------->
+                <link rel="stylesheet" href="./css/login.css">
     </head>
         <body>
             <!-------------------------------------- Navbar Section -------------------------------------->
@@ -123,32 +34,37 @@ a:link, a:visited{
         <div id="logo">
             <div class="logotext">Music Player</div>
         </div>
+        <!-- ------------------------------------on click login button--------------------------------->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalform">Login</button>
         
-        <!------------------------------------------Login section----------------------------------------->
+        <!------------------------------------------Modal form--------------------------------- -->
+        <div class="modal fade" id="modalform" tabindex="-1" area-hidden="true">
+        <div class="modal-dialog modal-dialog-centred">
+        <div class="modal-content">
+
+        <!------------------------------------------Login Form----------------------------------------->
         <div id ="login">
             <form action="">
-                <label for="email"><b>Email Id or Username</b></label><br>
-                <input type="email" id="email" placeholder="abc@gmail.com" class="form" required><br><br>
-                <label for="password"><b>Password (8 characters minimum)</b></label><br>
-                <input type="password" id="password" placeholder="********" class="form" minlength="8" required><br>
-                <br>
-                <input type="checkbox" id="remember" name="remember" >
-                <label for="remember"><b>Remember Me</b></label><br>
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label"><b>Email Id</b></label><br>
+                <input type="email" class="form-control" id="email" placeholder="abc@gmail.com" class="form" required>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="password" class="form-label"><b>Password (8 characters minimum)</b></label><br>
+                    <input type="password" class="form-control" id="password" placeholder="********" class="form" minlength="8" required>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="remember" name="remember" >
+                    <label for="remember"><b>Remember Me</b></label>
+                </div>
                 <div>
                     <input type="submit" value="Log In">
                 </div><br>
             </div>
             </form>
-            <hr class="divide">
-            <!------------------------------------------Login using account----------------------------------->
-            <div id="link">
-                <a href="https://www.facebook.com/" id="facebook"><b>Continue with facebook</b></a><br>
-                <a href="https://appleid.apple.com/" id="apple"><b>Continue with Apple</b></a><br>
-                <a href="https://myaccount.google.com/" id="google"><b>Continue with Google</b></a><br>
             </div>
-           
-
-
+        </div>
+    </div>
             <!-------------------------------------- Jquery ------------------------------------------->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
