@@ -92,6 +92,11 @@ body {
     flex-direction: row;
     height: 400px;
 }
+#login-section {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
 #login {
     flex:1.5;
     height: 100%;
