@@ -1,24 +1,15 @@
-/*$(document).ready(function(){
-    $("#signupbutton").click(function(){
-        $("#login").fadeOut();
-        $(".modal-right").fadeOut();
-    })
-    $("#signup-section").click(function(){
-        $("#options").fadeIn();
-        $(".modal-signup").fadeIn();
-    })
-}) */
 $(document).ready(function(){
-    $("#button").click(function(){
-        $("#login").show();
-        $("#login-image").show();
-        $("#options").hide();
-        $("#signup-image").hide();
+    $("#signup-section").hide();
+    $("#signupbutton").click(function()
+    {
+        $("#login-section").fadeOut();
+        setTimeout(function(){
+            $("#signup-section").fadeIn();
+        },400);
+    });
+    var myModalEl = document.getElementById('modalform')
+    myModalEl.addEventListener('hidden.bs.modal', function (){
+        $("#login-section").show();
+        $("#signup-section").hide();
     })
-        $("#signupbutton").click(function(){
-        $("#login").hide();
-        $("#login-image").hide();
-    $("#options").show();
-    $("#signup-image").show();
-})   
-})
+});

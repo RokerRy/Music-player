@@ -32,8 +32,7 @@
         <!-------------------------------------- Stylesheets ---------------------------------------->
         <link rel="stylesheet" href="./css/homepage.css">
         <!----------------------------------------Jquery--------------------------->
-        
-        <script src="./js/index.js"></script>
+
         <title>Music Player</title>
 
     </head>
@@ -63,11 +62,11 @@
 
         <!---------------------------------------------------Modal form--------------------------------------------------------->
         <div class="modal fade" id="modalform" tabindex="-1" area-hidden="true">
-            <div class="modal-dialog modal-dialog-centred modal-lg modal-sm">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-sm">
                 <div class="modal-content">
                 <!----------------------------------------------------Login Form------------------------------------------------------->
                     <div id="login-section">
-                        <div id ="login">
+                        <div class="modal-left">
                             <form action="">
                                 <div class="login-sec">
                                     <label for="email" >EMAIL</label>
@@ -97,20 +96,24 @@
                     </div>
                     
                     <div id="signup-section">
-                        <div id="signup">
-                            <div id="options">
-                                <div><button id="google" class="social"><i class="fa-brands fa-google"></i></button></div>
-                            <div><button id="apple" class="social"><i class="fa-brands fa-apple"></i></button></div>
-                            <div><button id="facebook" class="social"><i class="fa-brands fa-facebook"></i></button></div>
-                </div>
-                <div class="modal-signup">
-                    <img src="./assets/svgs/Signup.svg" id="signup-image">
+                        <div class="modal-left">
+                            <div>
+                                <button id="google" class="social"><i class="fa-brands fa-google"></i></button>
+                            </div>
+                            <div>
+                                <button id="apple" class="social"><i class="fa-brands fa-apple"></i></button>
+                            </div>
+                            <div>
+                                <button id="facebook" class="social"><i class="fa-brands fa-facebook"></i></button>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <img src="./assets/svgs/Signup.svg" id="signup-image">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-</div>
 
         <!-------------------------------------- Jquery ------------------------------------------->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"

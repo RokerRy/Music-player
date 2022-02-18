@@ -97,16 +97,16 @@ body {
     flex-direction: row;
     height: 400px;
 }
-#login {
+.modal-left {
     flex:1.5;
     height: 100%;
     padding: 0px 20px;
 }
-#login form, .login-sec {
+#login-section form, .login-sec {
     display: flex;
     flex-direction: column;
 }
-#login form {
+#login-section form {
     height: 100%;
     justify-content: center;
 }
@@ -185,7 +185,7 @@ body {
     /* -o-object-fit: cover;
     object-fit: cover; */
 }
-.modal-right::before{
+.modal-right::before {
     content: '';
     width: 0;
     height: 70%;
@@ -195,24 +195,31 @@ body {
     top: 60px;
 }
 /* -------------------------------------Signup-------------------------------------------*/
-#signup-section{
+#signup-section {
+    display: flex;
+    flex-direction: row;
     height: 400px;
-    justify-content: center
+    width: 100%;
 }
-.modal-signup{
+#signup {
+    flex: 1.5;
+    height: 100%;
+    padding: 0px 20px;
+}
+.modal-signup {
     flex: 2;
     font-size: 0;
     transition: 0.3s;
     overflow: hidden;
     flex-direction: row;
 }
-#signup-image{
+#signup-image {
     width: 100%;
     height: 100%;
     /* -o-object-fit: cover;
     object-fit: cover; */
 }
-.modal-signup::before{
+.modal-signup::before {
     content: '';
     width: 0;
     height: 70%;
