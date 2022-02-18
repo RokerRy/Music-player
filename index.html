@@ -27,10 +27,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" 
             integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+         
         
         <!-------------------------------------- Stylesheets ---------------------------------------->
         <link rel="stylesheet" href="./css/homepage.css">
-
+        <!----------------------------------------Jquery--------------------------->
+        
+        <script src="./js/index.js"></script>
         <title>Music Player</title>
 
     </head>
@@ -47,7 +50,7 @@
                     <ul id="menu-list">
                         <li><a href="#">Sign Up</a></li>
                         <li>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#modalform">
+                            <button type="button" id="button" data-bs-toggle="modal" data-bs-target="#modalform">
                                 <span class="material-icons-outlined">
                                     login
                                 </span>
@@ -83,25 +86,36 @@
                                         <input type="submit" value="Login">
                                     </div>
                                 </div>
+                                <br>
+                                <div class="Line">Don't have an account?</div>
+                                <button id="signupbutton"><i class="fa-solid fa-user-plus"></i></button>
                             </form>
                         </div>
                         <div class="modal-right">
-                            <img src="./assets/svgs/login.svg">
+                            <img src="./assets/svgs/login.svg" id="login-image">
                         </div>
                     </div>
                     
                     <div id="signup-section">
-
-                    </div>
+                        <div id="signup">
+                            <div id="options">
+                                <div><button id="google" class="social"><i class="fa-brands fa-google"></i></button></div>
+                            <div><button id="apple" class="social"><i class="fa-brands fa-apple"></i></button></div>
+                            <div><button id="facebook" class="social"><i class="fa-brands fa-facebook"></i></button></div>
+                </div>
+                <div class="modal-signup">
+                    <img src="./assets/svgs/Signup.svg" id="signup-image">
                 </div>
             </div>
         </div>
-
-
+    </div>
+</div>
+</div>
 
         <!-------------------------------------- Jquery ------------------------------------------->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+       
 
         <!-------------------------------------- Bootstrap Script --------------------------------->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

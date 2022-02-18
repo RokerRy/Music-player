@@ -86,7 +86,7 @@ body {
     color: white;
 }
 
-/*------------------------------------------------------ Login/Signup -------------------------------------------------------*/
+/*------------------------------------------------------ Login -------------------------------------------------------*/
 .modal-content {
     display: flex;
     flex-direction: row;
@@ -194,3 +194,31 @@ body {
     background-color: gray;
     top: 60px;
 }
+/* -------------------------------------Signup-------------------------------------------*/
+#signup-section{
+    height: 400px;
+    justify-content: center
+}
+.modal-signup{
+    flex: 2;
+    font-size: 0;
+    transition: 0.3s;
+    overflow: hidden;
+    flex-direction: row;
+}
+#signup-image{
+    width: 100%;
+    height: 100%;
+    /* -o-object-fit: cover;
+    object-fit: cover; */
+}
+.modal-signup::before{
+    content: '';
+    width: 0;
+    height: 70%;
+    position: absolute;
+    border: 0.5px solid gray;
+    background-color: gray;
+    top: 60px;
+}
+

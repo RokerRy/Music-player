@@ -1,0 +1,24 @@
+/*$(document).ready(function(){
+    $("#signupbutton").click(function(){
+        $("#login").fadeOut();
+        $(".modal-right").fadeOut();
+    })
+    $("#signup-section").click(function(){
+        $("#options").fadeIn();
+        $(".modal-signup").fadeIn();
+    })
+}) */
+$(document).ready(function(){
+    $("#button").click(function(){
+        $("#login").show();
+        $("#login-image").show();
+        $("#options").hide();
+        $("#signup-image").hide();
+    })
+        $("#signupbutton").click(function(){
+        $("#login").hide();
+        $("#login-image").hide();
+    $("#options").show();
+    $("#signup-image").show();
+})   
+})
