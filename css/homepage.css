@@ -164,6 +164,10 @@ body {
     align-items: center;
     font-size: 14px;
 }
+input:checked+label{
+    font-weight: bold;
+    color: black;
+}
 .login-sub input{
     width: 90px;
     height: 40px;
@@ -172,6 +176,9 @@ body {
     color:wheat;
     background-color: black;
     border-radius: 4px;
+}
+.login-sub input:hover{
+    color: white;
 }
 .modal-right {
     flex: 2;
@@ -227,5 +234,28 @@ body {
     border: 0.5px solid gray;
     background-color: gray;
     top: 60px;
+}
+.options{
+    padding: 10px;
+    margin-top: 10%;
+}
+.social{
+    font-size: large;
+    size: 50;
+    align-items: center;
+    padding: 3;
+    
+}
+#google{
+    background-color: white;
+    
+}
+#apple{
+    background-color: grey;
+    color: black;
+}
+#facebook{
+    background-color: white;
+    color:  rgb(59, 89, 152)
 }
 
