@@ -48,6 +48,8 @@
                     </div>
                     <ul id="menu-list">
                         <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Sign Up</a></li>
                         <li>
                             <button type="button" id="button" data-bs-toggle="modal" data-bs-target="#modalform">
                                 <span class="material-icons-outlined">
@@ -86,10 +88,15 @@
                                         <input type="submit" value="Login">
                                     </div>
                                 </div>
-                                <br>
+                                <!-- <br>
                                 <div class="Line"><b>Don't have an account?</b></div>
-                                <button id="signupbutton"><i class="fa-solid fa-user-plus"></i></button>
+                                <button id="signupbutton"><i class="fa-solid fa-user-plus"></i></button> -->
                             </form>
+                            <div class="line">Don't have an account?</div>
+                            <button id="signup-btn">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <span>Signup</span>
+                            </button>
                         </div>
                         <div class="modal-right">
                             <img src="./assets/svgs/login.svg" id="login-image">
@@ -97,16 +104,26 @@
                     </div>
                     
                     <div id="signup-section">
+                        <button id="gbt-login">
+                            <span class="material-icons-outlined">
+                                login
+                            </span>
+                        </button>
                         <div class="modal-left">
-                            <div>
-                                <button id="google" class="social"><i class="fa-brands fa-google"></i></button>
-                            </div>
-                            <div>
-                                <button id="apple" class="social"><i class="fa-brands fa-apple"></i></button>
-                            </div>
-                            <div>
-                                <button id="facebook" class="social"><i class="fa-brands fa-facebook"></i></button>
-                            </div>
+
+                            <button id="google" class="sign-option">
+                                <i class="fa-brands fa-google"></i>
+                                <span>Google</span>
+                            </button>
+                            <button id="apple" class="sign-option">
+                                <i class="fa-brands fa-apple"></i>
+                                <span>Apple ID</span>
+                            </button>
+                            <button id="facebook" class="sign-option">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Facebook</span>
+                            </button>
+
                         </div>
                         <div class="modal-right">
                             <img src="./assets/svgs/Signup.svg" id="signup-image">
