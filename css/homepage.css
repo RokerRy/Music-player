@@ -7,6 +7,8 @@ body {
     background-color: black;
     list-style-type: none;
 }
+
+/*-------------------------------------------------------------- NavBar --------------------------------------------------------*/
 #navbar{
     display: flex;
     flex-direction: column;
@@ -85,26 +87,53 @@ body {
     background-color:#04AA6D;
     color: white;
 }
-.search input[type=text]{
-    width: 110px;
-    height: 40px;
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px;
-    border-bottom: 5px;
     background-color: black;
+    padding: 2px;
+    transition: width 0.4s ease;
+}
+.hw-s {
+    height: 30px;
+    width: 30px;
+}
+.s-inp {
+    display: none;
+    width: 0px;
+    /* height: 40px; */
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
     color: wheat;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
-    font-size: 18px;
     padding: 5px;
     justify-content: space-around;
-    border: none;
+    background-color: inherit;
+    outline: none;
+    transition: width 0.4s ease;
 }
-.search input:hover{
+.search-disp{
+    display: initial;
+    /* width: 150px; */
+}
+.s-inp:focus {
+    width: 150px;
+}
+.search:hover {
     box-shadow: 0px 5px 20px 1px rgb(0 0 0 / 51%);
     background-color: #3a3a3a;
     transition: 0.3s;
-    
 }
+#menu-list span.material-icons-sharp {
+    font-size: 20px;
+    cursor: pointer;
+}
+
 /*------------------------------------------------------ Login -------------------------------------------------------*/
 .modal-content {
     display: flex;

@@ -18,9 +18,9 @@ $(document).ready(function(){
     myModalEl.addEventListener('hidden.bs.modal', function (){
         $("#login-section").show();
         $("#signup-section").hide();
-    })
+    });
 });
-/////////////////////////////////////Search Bar//////////////////////////////////////////////// 
+//--------------------------------------------- Search Bar ---------------------------------------------//
 function search_song(){
     let input=document.getElementById('searchbar').value
     input = input.toLowerCase();
@@ -34,3 +34,22 @@ function search_song(){
         }
     }
 }
+var sbar=document.getElementById("searchbar");
+var isOpen=false;
+function barAnimate() {
+    console.log(isOpen);
+    if(!isOpen)
+    {
+        isOpen=true;
+        document.querySelector(".search").classList.remove("hw-s");
+        sbar.classList.add("search-disp");
+        sbar.focus();    
+    }
+}
+document.getElementById("searchbar").addEventListener("focusout",function(){
+    setTimeout(function(){
+        sbar.classList.remove("search-disp");
+        document.querySelector(".search").classList.add("hw-s");
+        isOpen=false;
+    },270);
+});
