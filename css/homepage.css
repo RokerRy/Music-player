@@ -13,7 +13,6 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background-color: rgb(88, 91, 92);
     height:70px;
     transition: 0.3s;
     position: fixed;
@@ -21,12 +20,15 @@ body {
     top: 0;
     z-index: 100;
     justify-content: center;
+    background-color: #3a3a3a;
+    backdrop-filter: blur(8px);
 }
 #navbar>div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
 }
 #navbar a {
     text-decoration: none;
