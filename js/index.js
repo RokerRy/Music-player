@@ -54,8 +54,15 @@ document.getElementById("searchbar").addEventListener("focusout",function(){
     },270);
 });
 /////////////////////////////////////////Music button///////////////////////////////
-function myFunction(){
-    var music= documenr.getElementById("myaudio").paused;
-    document.getElementById("demo").innerHTML= music;
+function playMusic(){
+    wrapper.classList.add("paused");
+    MainAudio.play();
 }
-
+function playMusic(){
+    wrapper.classList.remove("paused");
+    MainAudio.pause();
+}
+playpauseBtn.addEventListener("click",()=>{
+    const isMusicPaused = wrapper.classList.contains("paused");
+    isMusicPaused ? pauseMusic() : playMusic();
+})
