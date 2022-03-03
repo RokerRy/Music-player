@@ -53,3 +53,9 @@ document.getElementById("searchbar").addEventListener("focusout",function(){
         isOpen=false;
     },270);
 });
+/////////////////////////////////////////Music button///////////////////////////////
+function myFunction(){
+    var music= documenr.getElementById("myaudio").paused;
+    document.getElementById("demo").innerHTML= music;
+}
+
