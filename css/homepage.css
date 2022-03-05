@@ -288,7 +288,7 @@ input:checked+label{
     background-color: gray;
     top: 60px;
 }
-/* -------------------------------------Signup-------------------------------------------*/
+/* -------------------------------------------------------------------Signup----------------------------------------------------------*/
 #signup-section {
     position: relative;
     display: flex;
@@ -382,21 +382,22 @@ input:checked+label{
     /* background-color: white; */
     color:  rgb(59, 89, 152)
 }
-/*********************************************Song class*******************************************************  */
+/*------------------------------------------------- Song class ----------------------------------------------------*/
 .song{
     display: list-item;
 }
 
-/*********************************************Music Button****************************************************/
+/*-------------------------------------------------- Music Buttonn -------------------------------------------------*/
 #music{
-    
-    bottom: 0%;
     display: flex;
+    position: fixed;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: white;
     bottom: 0%;
+    right: 0%;
+    z-index: 10;
+    width: 82vw;
+    height: fit-content;
+    color: white;
 }
 #wrapper{
     width: 380px;
@@ -464,4 +465,27 @@ opacity: 1;
     height: 40px;
     width: 40px;
     line-height: 40px;
+}
+
+/*----------------------------------------------------- SideNav ------------------------------------------------------*/
+#side-nav {
+    position: fixed;
+    z-index: 11;
+    background-color: white;
+    left: 0%;
+    bottom: 0%;
+    min-height: calc(100% - 70px);
+    background-color: #3a3a3a;
+    backdrop-filter: blur(8px);
+    border-top: black 2px solid;
+}
+.s-nav {
+    width: 18vw;
+}
+
+/*------------------------------------------------- Main Content ---------------------------------------------------- */
+#body-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
 }

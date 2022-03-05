@@ -53,7 +53,7 @@ document.getElementById("searchbar").addEventListener("focusout",function(){
         isOpen=false;
     },270);
 });
-/////////////////////////////////////////Music button///////////////////////////////
+//-------------------------------------------- Music button ----------------------------------------------//
 function playMusic(){
     wrapper.classList.add("paused");
     MainAudio.play();
