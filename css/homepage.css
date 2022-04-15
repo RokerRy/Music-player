@@ -53,6 +53,13 @@ body {
     font-size: 30px;
     font-weight: 700;
     color: #9a6c15;
+    
+}
+#music-image{
+    height: 65px;
+    width: 7vw;
+    position: absolute;
+    display: flex;
 }
 #menu-list {
     position: relative;
@@ -501,4 +508,24 @@ opacity: 1;
     display: flex;
     flex-direction: row;
     margin-top: 70px;
+}
+#playlist-image{
+    margin-top: 1%;
+    height: 65px;
+    width: 7vw;
+    position: absolute;
+    display: flex;
+}
+#happy_music-image{
+    margin-top: 1%;
+    height: 65px;
+    width: 7vw;
+    position: absolute;
+    display: flex;
+}
+.undraw li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
