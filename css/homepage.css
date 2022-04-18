@@ -39,10 +39,10 @@ body {
     box-sizing: border-box;
     z-index: 100;
     justify-content: center;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     color: white;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
 }
 #navbar>div {
     display: flex;
@@ -509,7 +509,19 @@ opacity: 1;
 .s-nav {
     width: 18vw;
 }
-
+#Meditating-image{
+    margin-left: 2px;
+    height: 80px;
+    width: 80px;
+}
+#imagination-image{
+    margin-left: 2px;
+    height: 80px;
+    width: 80px;
+}
+.images{
+    display: flex;
+}
 /*------------------------------------------------- Main Content ---------------------------------------------------- */
 #body-content {
     display: flex;
@@ -523,21 +535,19 @@ opacity: 1;
 }
 #playlist-image{
     margin-top: 1%;
-    height: 65px;
-    width: 7vw;
-    position: absolute;
-    display: flex;
+    height: 40%;
+    width: 40%;
+    /* padding: %; */
 }
 #happy_music-image{
     margin-top: 1%;
-    height: 65px;
-    width: 7vw;
-    position: absolute;
-    display: flex;
+    height:40%;
+    width: 40%;
+    /* padding-left: 5%; */
 }
-.undraw li{
+.undraw{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    /* flex-direction: row; */
+    justify-content:left;
+    padding: 10px;
 }
