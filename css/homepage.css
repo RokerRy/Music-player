@@ -55,17 +55,22 @@ body {
     text-decoration: none;
     color: inherit;
 }
-#logo {
+#logo
+{
     font-family: 'Nunito', sans-serif;
     font-size: 30px;
     font-weight: 700;
     color: #9a6c15;
-    
+    position: relative;
+    z-index: 1;
 }
 #music-image{
     height: 65px;
     width: 7vw;
     position: absolute;
+    z-index: -1;
+    left: 20%;
+    top: -35%;
     display: flex;
 }
 #menu-list {
@@ -533,21 +538,41 @@ opacity: 1;
     width: 82vw;
     height: calc(100vh - 90px);
 }
-#playlist-image{
+.main-sec
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.sec-ele
+{
+    width: fit-content;
+}
+.sec-ele a
+{
+    color: inherit;
+    height: fit-content;
+    text-decoration: none;
+}
+.sec-ele img
+{
+    height: 200px;
+}
+/* #playlist-image{
     margin-top: 1%;
     height: 40%;
     width: 40%;
-    /* padding: %; */
+    padding: ;
 }
 #happy_music-image{
     margin-top: 1%;
     height:40%;
     width: 40%;
-    /* padding-left: 5%; */
+    padding-left: 5%;
 }
 .undraw{
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
     justify-content:left;
     padding: 10px;
-}
+} */
